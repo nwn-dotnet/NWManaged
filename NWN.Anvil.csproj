@@ -37,6 +37,7 @@
 
     <ItemGroup>
         <PackageReference Include="LightInject" Version="6.4.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
         <PackageReference Include="NLog" Version="4.7.11" />
         <PackageReference Include="NWN.Core" Version="8193.32.1" PrivateAssets="compile" />
         <PackageReference Include="NWN.Native" Version="8193.32.0" PrivateAssets="compile" />

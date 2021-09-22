@@ -1159,5 +1159,18 @@ namespace Anvil.API
     {
       NWScript.SqlDestroyDatabase(ControlledCreature);
     }
+
+    /// <summary>
+    /// Create a NUI window inline for this player.
+    /// </summary>
+    /// <param name="window">The window to create.</param>
+    /// <param name="windowId">A unique alphanumeric ID identifying this window. Re-creating a window with the same id of one already open will immediately close the old one.</param>
+    /// <returns>The window token on success (!= 0), or 0 on error.</returns>
+    public int CreateNuiWindow(NuiWindow window, string windowId = "")
+    {
+      string jsonString = Newtonsoft.Json.JsonConvert.SerializeObject(window);
+      Json json = Json.Parse(jsonString);
+      return NWScript.NuiCreate(ControlledCreature, json, windowId);
+    }
   }
 }

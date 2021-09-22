@@ -1,0 +1,9 @@
+namespace Anvil.API
+{
+  public enum NuiHAlign
+  {
+    Center = 0,
+    Left = 1,
+    Right = 2,
+  }
+}

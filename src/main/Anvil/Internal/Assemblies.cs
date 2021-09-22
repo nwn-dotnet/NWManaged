@@ -20,6 +20,7 @@ namespace Anvil.Internal
       Native,
       typeof(NLog.Logger).Assembly,
       typeof(LightInject.ServiceContainer).Assembly,
+      typeof(Newtonsoft.Json.JsonConvert).Assembly,
     };
 
     public static readonly List<string> ReservedNames = AllAssemblies
